@@ -13,7 +13,9 @@ class ListController extends Controller
      */
     public function index()
     {
-        //
+         // Product::inRandomOrder()->take(8)->get();
+         $products = "This is a simple text string";
+         return view('list');
     }
 
     /**
@@ -45,7 +47,9 @@ class ListController extends Controller
      */
     public function show($id)
     {
-        //
+         // $product = Product::where('id',$id)->firstOrFail();
+         return view('product')->with('product',$product);
+         //
     }
 
     /**

@@ -13,7 +13,9 @@ class IndexController extends Controller
      */
     public function index()
     {
-        //
+        // Product::inRandomOrder()->take(8)->get();
+        $products = "This is a simple text string";
+        return view('index')->with("products", $products);
     }
 
     /**
