@@ -19,3 +19,7 @@ Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Route::get('/Store', [ListController::class, 'index'])->name('list');
 Route::get('/Store/{product}', [ListController::class, 'show'])->name('product');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
