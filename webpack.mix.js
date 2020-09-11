@@ -31,5 +31,5 @@ mix.scripts([
 ], 'public/js/all.js');
 
 // 'public/js/vendor/bootstrap.min.js',
-//  'public/js/vendor/jquery.min.js',
+// 'public/js/vendor/jquery.min.js',
 
