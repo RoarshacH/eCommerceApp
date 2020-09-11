@@ -17,6 +17,8 @@ mix.js('resources/js/app.js', 'public/js')
     ]);
 
 mix.styles([
+    'public/css/vendor/bootstrap.min.css',
+    'public/css/vendor/font-awesome.min.css',
     'public/css/vendor/nouislider.min.css',
     'public/css/vendor/slick.css',
     'public/css/vendor/slick-theme.css',
@@ -24,12 +26,13 @@ mix.styles([
 ], 'public/css/all.css');
 
 mix.scripts([
+    'public/js/vendor/jquery.min.js',
+    'public/js/vendor/bootstrap.min.js',
     'public/js/vendor/jquery.zoom.min.js',
     'public/js/vendor/nouislider.min.js',
     'public/js/vendor/slick.min.js',
     'public/js/vendor/main.js'
 ], 'public/js/all.js');
 
-// 'public/js/vendor/bootstrap.min.js',
-// 'public/js/vendor/jquery.min.js',
+
 

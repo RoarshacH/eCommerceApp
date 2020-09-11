@@ -11,7 +11,8 @@
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
          <!-- CSS -->
-         <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
          <link type="text/css" rel="stylesheet" href="{{ asset('css/all.css') }}">
 
 
@@ -266,7 +267,7 @@
 		<!-- /FOOTER -->
 
 		<!-- jQuery Plugins -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/all.js') }}"></script>
 
 	</body>
