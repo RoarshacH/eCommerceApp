@@ -24,8 +24,8 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +0xx-xx-xx-xxx</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+						<li><a><i class="fa fa-phone"></i> +0xx-xx-xx-xxx</a></li>
+						<li><a><i class="fa fa-envelope-o"></i> email@email.com</a></li>
                     </ul>
                     @if (Route::has('login'))
                     <ul class="header-links pull-right">

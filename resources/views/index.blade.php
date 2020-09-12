@@ -95,7 +95,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category"> {{$product->category_id}} </p>
-												<h3 class="product-name"><a href="#">{{$product->name}}</a></h3>
+												<h3 class="product-name"><a>{{$product->name}}</a></h3>
 												<h4 class="product-price">{{$product->price}}</h4>
 												<div class="product-rating">
 												</div>
