@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class ListController extends Controller
@@ -13,7 +13,7 @@ class ListController extends Controller
      */
     public function index()
     {
-         // Product::inRandomOrder()->take(8)->get();
+         // Products::inRandomOrder()->take(8)->get();
          $products = "This is a simple text string";
          return view('list');
     }
@@ -42,13 +42,14 @@ class ListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-         // $product = Product::where('id',$id)->firstOrFail();
-         return view('product')->with('product',$product);
+         // $product = Products::where('slug',$slug)->firstOrFail();
+         return view('product');
+        //  ->with('product',$product);
          //
     }
 

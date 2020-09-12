@@ -26,7 +26,6 @@
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +0xx-xx-xx-xxx</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
                     </ul>
                     @if (Route::has('login'))
                     <ul class="header-links pull-right">
@@ -66,8 +65,9 @@
 								<form>
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Category 01</option>
-										<option value="1">Category 02</option>
+										<option value="1">Laptop</option>
+                                        <option value="2">Smartphones</option>
+                                        <option value="3">Accessories</option>
 									</select>
 									<input class="input" placeholder="Search here">
 									<button class="search-btn">Search</button>
@@ -86,8 +86,8 @@
 										<i class="fa fa-shopping-cart"></i>
 										<span>Your Cart</span>
 										<div class="qty">3</div>
-									</a>
-									<div class="cart-dropdown">
+                                    </a>
+                                    <div class="cart-dropdown">
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
@@ -122,15 +122,6 @@
 									</div>
 								</div>
 								<!-- /Cart -->
-
-								<!-- Menu Toogle -->
-								<div class="menu-toggle">
-									<a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-								</div>
-								<!-- /Menu Toogle -->
 							</div>
 						</div>
 						<!-- /ACCOUNT -->
@@ -151,12 +142,11 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Hot Deals</a></li>
-						<li><a href="#">Browse</a></li>
-						<li><a href="#">Laptops</a></li>
-						<li><a href="#">Smartphones</a></li>
-						<li><a href="#">Accessories</a></li>
+                        <li class="active"><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{route('list')}}">Browse</a></li>
+						<li><a href="{{url('/store?category=laptop')}}">Laptops</a></li>
+						<li><a href="{{url('/store?category=laptop')}}">Smartphones</a></li>
+						<li><a href="{{url('/store?category=laptop')}}">Accessories</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -195,10 +185,10 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Accessories</a></li>
+                                    <li><a href="{{route('list')}}">Store</a></li>
+									<li><a href="{{url('/store?category=laptop')}}">Laptops</a></li>
+									<li><a href="{{url('/store?category=smartphones')}}">Smartphones</a></li>
+									<li><a href="{{url('/store?category=accessories')}}">Accessories</a></li>
 								</ul>
 							</div>
 						</div>
@@ -222,8 +212,6 @@
 								<ul class="footer-links">
 									<li><a href="#">My Account</a></li>
 									<li><a href="#">View Cart</a></li>
-									<li><a href="#">Wishlist</a></li>
-									<li><a href="#">Track My Order</a></li>
 									<li><a href="#">Help</a></li>
 								</ul>
 							</div>

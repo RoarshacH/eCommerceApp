@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ListController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,12 @@ use App\Http\Controllers\ListController;
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
-Route::get('/Store', [ListController::class, 'index'])->name('list');
-Route::get('/Store/{product}', [ListController::class, 'show'])->name('product');
+Route::get('/store', [ListController::class, 'index'])->name('list');
+Route::get('/store/{product}', [ListController::class, 'show'])->name('product');
+
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

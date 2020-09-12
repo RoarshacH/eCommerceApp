@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Products;
-class IndexController extends Controller
+
+class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        // Product::inRandomOrder()->take(8)->get();
-        $products = "This is a simple text string";
-        return view('index')->with("products", $products);
+        return view('cart');
     }
 
     /**
